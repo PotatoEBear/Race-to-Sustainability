@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take Action | Race to Sustainability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo"><i class="fa-solid fa-leaf"></i> Race to Sustainability</a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#" class="dropdown-toggle">Technologies <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="tech/energy-recovery.html">Energy Recovery</a></li>
+          <li><a href="tech/sustainable-fuels.html">Sustainable Fuels</a></li>
+          <li><a href="tech/hybrid-powertrains.html">Hybrid Power</a></li>
+          <li><a href="tech/turbocharging.html">Turbocharging</a></li>
+          <li><a href="tech/battery-tech.html">Battery Tech</a></li>
+          <li><a href="tech/aerodynamics.html">Aerodynamics</a></li>
+          <li><a href="tech/lightweight-materials.html">Lightweight Materials</a></li>
+          <li><a href="tech/bio-composites.html">Bio‑Composites</a></li>
+          <li><a href="tech/sustainable-tyres.html">Sustainable Tyres</a></li>
+          <li><a href="tech/hydrogen-racing.html">Hydrogen Racing</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="dropdown-toggle">Motorsport Series <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="series/formula1.html">Formula 1</a></li>
+          <li><a href="series/formula-e.html">Formula E</a></li>
+          <li><a href="series/wec.html">WEC / Le Mans</a></li>
+          <li><a href="series/wrc.html">WRC Rally</a></li>
+          <li><a href="series/extreme-e.html">Extreme E</a></li>
+          <li><a href="series/indycar.html">IndyCar</a></li>
+          <li><a href="series/motogp.html">MotoGP</a></li>
+        </ul>
+      </li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="future.html">Future Vision</a></li>
+      <li><a href="impact.html">Real‑World Impact</a></li>
+      <li><a href="action.html" class="active">Take Action</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+  </nav>
+
+  <main class="content-page">
+    <div class="container text-center">
+      <h1 data-aos="fade-up">Take Action: Spread the Word</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="100">
+        You don’t need a social media empire or a contact list to make a difference. Share what you’ve learned, start conversations, and help us make sustainable motorsport common knowledge.
+      </p>
+
+      <div class="card-grid" style="max-width:800px; margin:2rem auto;">
+        <!-- Share card -->
+        <div class="card" data-aos="zoom-in-up">
+          <i class="fa-solid fa-share-nodes fa-2x"></i>
+          <h3>Share This Resource</h3>
+          <p>Copy the link or use the quick‑share buttons to send this site to friends, teachers, or fellow fans.</p>
+          <button id="copyLinkBtn" class="btn" style="margin-top:1rem;">
+            <i class="fa-solid fa-copy"></i> Copy Website Link
+          </button>
+          <p style="margin-top:1rem;">Or share directly:</p>
+          <div style="display:flex; justify-content:center; gap:1rem; margin-top:0.5rem; flex-wrap:wrap;">
+            <a href="https://twitter.com/intent/tweet?text=Discover+how+motorsport+is+racing+towards+a+sustainable+future%3A&url=https%3A%2F%2Fyourusername.github.io%2Frace-to-sustainability%2F" target="_blank" class="btn btn-outline" style="padding:0.5rem 1.2rem; border-radius:20px;">
+              <i class="fa-brands fa-x-twitter"></i> Post
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourusername.github.io%2Frace-to-sustainability%2F" target="_blank" class="btn btn-outline" style="padding:0.5rem 1.2rem; border-radius:20px;">
+              <i class="fa-brands fa-facebook"></i> Share
+            </a>
+            <a href="https://api.whatsapp.com/send?text=Check+out+this+awesome+site+about+sustainable+motorsport%3A+https%3A%2F%2Fyourusername.github.io%2Frace-to-sustainability%2F" target="_blank" class="btn btn-outline" style="padding:0.5rem 1.2rem; border-radius:20px;">
+              <i class="fa-brands fa-whatsapp"></i> Send
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact card (demo) -->
+        <div class="card" data-aos="zoom-in-up" data-aos-delay="100">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+          <h3>Get In Touch</h3>
+          <p>We’re a small group of advocates – this form is a demo. In the future, we’ll use it to gather feedback and ideas.</p>
+          <form id="contactForm" class="contact-form" style="margin-top:1rem;">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email (not stored)" required />
+            <textarea rows="4" placeholder="Your message or suggestion..." required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <p id="formMessage" style="margin-top:0.5rem;"></p>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem;" data-aos="fade-up">
+        <h2>More Ways to Help</h2>
+        <p>• <strong>Talk about it</strong> – Tell one person today why motorsport matters for the environment.<br>
+           • <strong>Support sustainable series</strong> – Watch Formula E, Extreme E, and WEC.<br>
+           • <strong>Demand better</strong> – Ask your favourite racing series on social media what they are doing to reduce their footprint.<br>
+           • <strong>Educate yourself</strong> – Dive into our <a href="tech/energy-recovery.html">Technology section</a> and become an expert.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Race to Sustainability. | Built for advocacy, not profit.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
